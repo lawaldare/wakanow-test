@@ -1,0 +1,11 @@
+<div class="container" *ngIf="user">
+  <p class="back mt-4" routerLink="/dashboard">Go back</p>
+  <nz-card nzHoverable style="width:300px; margin: 0 auto; margin-top: 50px;" [nzCover]="coverTemplate">
+    <nz-card-meta [nzTitle]="name"></nz-card-meta>
+    <nz-card-meta [nzTitle]="user.email"></nz-card-meta>
+  </nz-card>
+  <ng-template #coverTemplate>
+    <img alt="avatar" [src]="user.avatar" />
+  </ng-template>
+
+</div>

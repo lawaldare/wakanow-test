@@ -1,0 +1,43 @@
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.userTable ::ng-deep {
+  background-color: #f7f7f7;
+  margin-top: 40px;
+
+  .ant-table {
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+
+  .ant-table-tbody > tr > td {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    color: #000;
+  }
+
+  .ant-table-thead > tr > th {
+    background-color: #7952b3;
+    border: none !important;
+    color: #fff;
+  }
+}
+
+.view-btn {
+  text-align: center;
+  color: #7952b3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

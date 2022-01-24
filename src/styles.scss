@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.auth-card {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 20px;
+
+  &__title {
+    text-align: center;
+  }
+}
+
+.ant-btn-primary.bg-ren-primary {
+  background-color: #7952b3;
+  border: none !important;
+  border-radius: 24px !important;
+  height: 48px;
+  color: #fff;
+  &:hover {
+    opacity: 0.9;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none !important;
+    border: none !important;
+  }
+
+  &:active {
+    outline: none !important;
+    border: none !important;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  .form-floating > .form-control:focus {
+    border: none !important;
+    box-shadow: none;
+  }
+}
